@@ -7,29 +7,187 @@
 <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="site-header-inner">
-    <a href="/" class="logo-wrap">
-      <div class="logo-circle">
-        <span class="logo-n">N</span>
-        <div class="logo-dot"></div>
-      </div>
-      <span class="logo-name">Nadhled</span>
-    </a>
-    <span class="tagline">Protože číst jedno médium nestačí.</span>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <a href="/" class="logo-wrap">
+    <div class="logo-circle"><span class="logo-n">N</span><div class="logo-dot"></div></div>
+    <span class="logo-name">Nadhled</span>
+  </a>
+  <div class="nav-links">
+    <a href="#jak">Jak to funguje</a>
+    <a href="#analyzy">Analýzy</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#analyzy" class="nav-cta">Číst analýzy</a>
   </div>
-</header>
-<main class="page">
-  <div class="home-intro">
-    <h1>Mediální analýza</h1>
-    <p>Každý den jedno téma — jak o něm píší česká média a co všichni přehlédli.</p>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div id="media-floats"></div>
+  <div class="hero-content">
+    <div class="hero-label">Mediální analýza · každý den</div>
+    <h1 class="hero-hl">Víme, co<br>média <em>neříkají.</em></h1>
+    <p class="hero-sub">Každý den analyzujeme, jak česká média pokrývají jedno klíčové téma — a co všichni záměrně přehlédli.</p>
+    <div class="hero-actions">
+      <a href="#analyzy" class="btn-gold">Číst dnešní analýzu</a>
+      <a href="#jak" class="btn-outline">Jak to funguje <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
   </div>
-  <div class="articles-list">
-    <!-- články se generují automaticky -->
+</section>
+
+<!-- MEDIA STRIP -->
+<div class="media-strip" aria-hidden="true">
+  <div class="media-strip-inner">
+    <div class="strip-track">
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">iRozhlas</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">ČT24</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Seznam Zprávy</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">iDnes</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">TN.cz</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">CNN Prima</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Aktuálně.cz</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Deník N</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Echo24</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Forum24</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">iRozhlas</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">ČT24</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Seznam Zprávy</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">iDnes</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">TN.cz</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">CNN Prima</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Aktuálně.cz</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Deník N</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Echo24</span></div>
+      <div class="strip-item"><div class="strip-dot"></div><span class="strip-name">Forum24</span></div>
+    </div>
   </div>
-</main>
-<footer class="site-footer">
-  <strong>Nadhled</strong> · Denní mediální analýza · Automaticky generováno
+</div>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="stat"><div class="stat-num" data-target="10">0</div><div class="stat-label">médií sledujeme<br>každý den</div></div>
+  <div class="stat"><div class="stat-num" data-suffix=" denně" data-target="1">0</div><div class="stat-label">nová analýza<br>bez výjimky</div></div>
+  <div class="stat"><div class="stat-num" data-prefix="~" data-target="800">0</div><div class="stat-label">článků prochází<br>naší analýzou</div></div>
+  <div class="stat"><div class="stat-num" data-suffix=" Kč" data-target="0">0</div><div class="stat-label">stojí přístup<br>ke všem analýzám</div></div>
+</div>
+
+<!-- HOW -->
+<section class="section-home" id="jak">
+  <div class="section-label reveal">Proces</div>
+  <h2 class="section-title-home reveal">Jak čteme média<br>za vás.</h2>
+  <div class="how-grid reveal">
+    <div class="how-card">
+      <div class="how-num">1</div>
+      <div class="how-step-label">Sbíráme</div>
+      <h3>10 médií, každý den</h3>
+      <p>Automaticky stahujeme stovky článků z veřejnoprávních, komerčních i nezávislých médií — od iRozhlasu po Echo24.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">2</div>
+      <div class="how-step-label">Analyzujeme</div>
+      <h3>Fakta vs. emoce</h3>
+      <p>AI vyhodnotí, jak každé médium téma rámuje — zda staví na faktech, strachu, morálce nebo polarizaci. A co všichni přehlédli.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-num">3</div>
+      <div class="how-step-label">Publikujeme</div>
+      <h3>Instagram + webový článek</h3>
+      <p>Výsledek vychází každý den jako carousel na Instagramu a jako podrobný článek zde. Vždy do večera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="articles-section" id="analyzy">
+  <div class="articles-header reveal">
+    <div>
+      <div class="section-label">Poslední analýzy</div>
+      <h2 class="section-title-home" style="margin-bottom:0;font-size:clamp(30px,3vw,46px)">Co jsme analyzovali.</h2>
+    </div>
+  </div>
+  <div class="articles-grid reveal">
+    <div class="art-empty">Analýzy budou k dispozici od zítřka.</div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+  <div class="reveal">
+    <blockquote class="mission-quote">Nechceme říkat, co si myslet. Chceme ukázat, <em>jak média říkají vám, co myslet.</em></blockquote>
+    <div class="mission-sig"><div class="mission-sig-line"></div><div class="mission-sig-text">Mise Nadhledu</div></div>
+  </div>
+  <div class="mission-body reveal">
+    <p>Žijeme v době, kdy každé médium sleduje jiný zájem — politický, komerční nebo ideologický. Čtenář to většinou nevidí, protože čte jedno médium a bere ho jako pravdu.</p>
+    <p>Nadhled to mění. Každý den porovnáme, jak deset různých českých médií pokrývá jedno klíčové téma — a co všichni záměrně přehlédli nebo zamlčeli.</p>
+    <p>Výsledek je mediální gramotnost v praxi: ne abstraktní teorie, ale konkrétní pohled na dnešní zprávy.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="kontakt">
+  <div class="reveal">
+    <div class="section-label">Kontakt</div>
+    <h2 class="section-title-home" style="margin-bottom:20px;font-size:clamp(28px,3vw,44px)">Máte tip nebo chcete spolupracovat?</h2>
+    <p style="font-size:15px;color:var(--muted);line-height:1.7;margin-bottom:32px">Rádi si přečteme tipy na témata, která by si zasloužila analýzu. Nebo se ozvěte, pokud hledáte mediálního partnera.</p>
+    <div class="contact-handles">
+      <div class="handle"><div class="handle-dot"></div>Instagram: @nadhled_</div>
+      <div class="handle"><div class="handle-dot"></div>ahoj@nadhled.cz</div>
+    </div>
+  </div>
+  <form class="contact-form reveal" action="https://formspree.io/f/placeholder" method="POST">
+    <div class="form-group"><label class="form-label">Jméno</label><input class="form-input" type="text" name="name" placeholder="Jan Novák" required></div>
+    <div class="form-group"><label class="form-label">E-mail</label><input class="form-input" type="email" name="email" placeholder="jan@novak.cz" required></div>
+    <div class="form-group"><label class="form-label">Zpráva</label><textarea class="form-ta" name="message" placeholder="Tip na téma, dotaz nebo jen ahoj…" required></textarea></div>
+    <button type="submit" class="form-btn">Odeslat zprávu</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer-home">
+  <a href="/" class="logo-wrap">
+    <div class="logo-circle"><span class="logo-n">N</span><div class="logo-dot"></div></div>
+    <span class="logo-name">Nadhled</span>
+  </a>
+  <div class="footer-tagline">Protože číst jedno médium nestačí.</div>
+  <div class="footer-copy">© 2026 Nadhled</div>
 </footer>
+
+<script>
+const MEDIA=['iRozhlas','ČT24','Seznam','iDnes','TN.cz','Prima','Aktuálně','Deník N','Echo24','Forum24'];
+const TAGS=[{l:'fakta',c:'ft-fakta'},{l:'strach',c:'ft-strach'},{l:'morálka',c:'ft-moralna'},{l:'polarizace',c:'ft-polarizace'},{l:'manipulace',c:'ft-manipulace'},{l:'chybí kontext',c:'ft-chybi'}];
+const fc=document.getElementById('media-floats');
+function spawnFloat(){
+  const n=MEDIA[Math.floor(Math.random()*MEDIA.length)];
+  const t=TAGS[Math.floor(Math.random()*TAGS.length)];
+  const el=document.createElement('div');
+  el.className='media-float';
+  el.style.left=(8+Math.random()*82)+'%';
+  el.style.top=(5+Math.random()*84)+'%';
+  el.innerHTML=`<div class="media-float-name">${n}</div><div class="media-float-tag ${t.c}">${t.l}</div>`;
+  fc.appendChild(el);
+  requestAnimationFrame(()=>{el.style.opacity='1';});
+  setTimeout(()=>{el.style.opacity='0';setTimeout(()=>el.remove(),620);},2200+Math.random()*1800);
+}
+setInterval(spawnFloat,820);
+for(let i=0;i<6;i++) setTimeout(spawnFloat,i*180);
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+},{threshold:0.07});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+const cobs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    const el=e.target,target=+el.dataset.target,prefix=el.dataset.prefix||'',suffix=el.dataset.suffix||'';
+    if(target===0){el.textContent=prefix+'0'+suffix;return;}
+    let cur=0;const dur=1400,step=16,inc=target/(dur/step);
+    const t=setInterval(()=>{cur=Math.min(cur+inc,target);el.textContent=prefix+Math.floor(cur)+suffix;if(cur>=target)clearInterval(t);},step);
+    cobs.unobserve(el);
+  });
+},{threshold:0.5});
+document.querySelectorAll('[data-target]').forEach(c=>cobs.observe(c));
+</script>
 </body>
 </html>
